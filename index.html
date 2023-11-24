@@ -41,22 +41,26 @@
             position: fixed;
             bottom: 0;
             font-size: 27px;
-            padding: 10px;
+            padding: 2px;
             font-weight: bold;
             font-family: 'Slavia Medium';
         }
 
-        @media screen and (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
+            body {
+                overflow: hidden;
+            }
             .bg_image {
                 background-image: url('WG_bg_mobile.jpeg');
-
-                .logo_img {
-                    position: absolute;
-                    left: 30px;
-                    top: 100px;
-                    width: 85%;
-                }
             }
+
+            .logo_img {
+                position: absolute;
+                left: 30px;
+                top: 100px;
+                width: 85%;
+            }
+
         }
     </style>
 </head>
